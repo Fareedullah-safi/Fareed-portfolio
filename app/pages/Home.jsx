@@ -11,7 +11,7 @@ const Home = () => {
                     <img
                         src="images/Fareed.png"
                         alt="Fareed Safi"
-                        className="w-40 h-40 object-cover rounded-full"
+                        className="w-60 h-60 object-cover mt-3 rounded-full"
                     />
                 </div>
 
