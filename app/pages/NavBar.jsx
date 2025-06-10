@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import { Poppins } from 'next/font/google';
-import { Link } from 'lucide-react';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,27 +24,49 @@ const NavBar = () => {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-4 md:gap-6 text-base md:text-1xl font-semibold text-gray-200">
           <li className="relative group cursor-pointer">
-            <span className="relative z-10">Home</span>
+            <span className="relative z-10">
+              <a href='#Home'>Home</a>
+            </span>
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
           </li>
           <li className="relative group cursor-pointer">
-            <span className="relative z-10">About</span>
+            <span className="relative z-10">
+              <a href="#About">
+                About
+              </a>
+            </span>
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
           </li>
           <li className="relative group cursor-pointer">
-            <span className="relative z-10">Service</span>
+            <span className="relative z-10">
+              <a href="#Services">
+                Services
+              </a>
+            </span>
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
           </li>
           <li className="relative group cursor-pointer">
-            <span className="relative z-10">Skills</span>
+            <span className="relative z-10">
+              <a href="#Skills">
+                Skills
+              </a>
+            </span>
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
           </li>
           <li className="relative group cursor-pointer">
-            <span className="relative z-10">Project</span>
+            <span className="relative z-10">
+              <a href="#Project">
+                Project
+              </a>
+            </span>
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
           </li>
           <li className="relative group cursor-pointer">
-            <span className="relative z-10">Contact</span>
+            <span className="relative z-10">
+              <a href="#Contact">
+                Contact
+              </a>
+            </span>
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
           </li>
         </ul>

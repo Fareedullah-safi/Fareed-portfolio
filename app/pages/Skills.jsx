@@ -6,21 +6,21 @@ import { SiNextdotjs } from 'react-icons/si';
 const technicalSkills = [
   { name: 'HTML', percent: 90, icon: <FaHtml5 className="text-orange-500" /> },
   { name: 'Tailwind CSS', percent: 85, icon: <FaCss3Alt className="text-blue-400" /> },
-  { name: 'JavaScript', percent: 82, icon: <FaJs className="text-yellow-400" /> },
-  { name: 'React', percent: 82, icon: <FaReact className="text-cyan-400" /> },
-  { name: 'Next.js', percent: 75, icon: <SiNextdotjs className="text-white" /> },
+  { name: 'JavaScript', percent: 80, icon: <FaJs className="text-yellow-400" /> },
+  { name: 'React', percent: 75, icon: <FaReact className="text-cyan-400" /> },
+  { name: 'Next.js', percent: 82, icon: <SiNextdotjs className="text-white" /> },
 ];
 
 const professionalSkills = [
   { name: 'Creativity', percent: 90 },
-  { name: 'Communication', percent: 85 },
+  { name: 'Communication', percent: 75 },
   { name: 'Problem Solving', percent: 75 },
   { name: 'Teamwork', percent: 85 },
 ];
 
 const Skills = () => {
   return (
-    <section className="min-h-screen bg-[#0a192f] text-white py-16 px-4">
+    <section id='Skills' className="min-h-screen bg-[#0a192f] text-white py-16 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Technical Skills */}
         <div>
@@ -56,7 +56,7 @@ const Skills = () => {
             {professionalSkills.map(({ name, percent }) => (
               <div key={name} className="flex flex-col items-center">
                 <div className="relative w-28 h-28">
-                <svg className="w-full h-full" viewBox="0 0 36 36">
+                  <svg className="w-full h-full" viewBox="0 0 36 36">
                     <path
                       d="M18 2.0845
                         a 15.9155 15.9155 0 0 1 0 31.831

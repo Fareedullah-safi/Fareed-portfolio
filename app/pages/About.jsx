@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="bg-[#0a1c28] w-full flex flex-col lg:flex-row justify-center items-center p-6 gap-6 text-white">
+        <section id='About' className="bg-[#0a1c28] w-full flex flex-col lg:flex-row min-h-screen py-16 justify-center items-center p-6 gap-6 text-white">
             <div>
                 <img
                     src="/images/fareed.png"
