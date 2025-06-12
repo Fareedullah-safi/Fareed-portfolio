@@ -4,8 +4,17 @@ import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['500'], // minimal weight
+  weight: ['500'],
 });
+
+const navLinks = [
+  { name: 'Home', href: '#Home' },
+  { name: 'About', href: '#About' },
+  { name: 'Services', href: '#Services' },
+  { name: 'Skills', href: '#Skills' },
+  { name: 'Project', href: '#Project' },
+  { name: 'Contact', href: '#Contact' },
+];
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,55 +32,17 @@ const NavBar = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-4 md:gap-6 text-base md:text-1xl font-semibold text-gray-200">
-          <li className="relative group cursor-pointer">
-            <span className="relative z-10">
-              <a href='#Home'>Home</a>
-            </span>
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
-          </li>
-          <li className="relative group cursor-pointer">
-            <span className="relative z-10">
-              <a href="#About">
-                About
-              </a>
-            </span>
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
-          </li>
-          <li className="relative group cursor-pointer">
-            <span className="relative z-10">
-              <a href="#Services">
-                Services
-              </a>
-            </span>
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
-          </li>
-          <li className="relative group cursor-pointer">
-            <span className="relative z-10">
-              <a href="#Skills">
-                Skills
-              </a>
-            </span>
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
-          </li>
-          <li className="relative group cursor-pointer">
-            <span className="relative z-10">
-              <a href="#Project">
-                Project
-              </a>
-            </span>
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
-          </li>
-          <li className="relative group cursor-pointer">
-            <span className="relative z-10">
-              <a href="#Contact">
-                Contact
-              </a>
-            </span>
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.name} className="relative group cursor-pointer">
+              <span className="relative z-10">
+                <a href={link.href}>{link.name}</a>
+              </span>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
+            </li>
+          ))}
         </ul>
 
-        {/* Mobile Hamburger/Close Icon */}
+        {/* Mobile Hamburger */}
         <div
           className="md:hidden text-gray-200 text-2xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
@@ -82,20 +53,18 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile Navigation */}
       {isOpen && (
         <ul
           id="mobile-menu"
-          className="md:hidden flex flex-col items-start gap-3 px-6 pb-4 text-base font-medium text-gray-200 bg-gray-800 transition-all duration-300"
+          className="md:hidden flex items-center gap-4 px-6 text-base font-medium text-gray-200 bg-white/0 backdrop-blur-md backdrop-saturate-150 border border-white/10 rounded-xl shadow-lg"
         >
-          {navItems.map((item) => (
-            <li key={item.name} className="relative group cursor-pointer w-full pt-1">
-              {/* Use Link component for mobile nav items too */}
-              <Link href={item.href} onClick={() => setIsOpen(false)}>
-                {' '}
-                {/* Close menu on click */}
-                <span className="relative z-10">{item.name}</span>
-              </Link>
+          {navLinks.map((link) => (
+            <li key={link.name} className="relative group cursor-pointer">
+              <span className="relative z-10">
+                <a href={link.href}>{link.name}</a>
+              </span>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
             </li>
           ))}
         </ul>

@@ -34,7 +34,7 @@ export default function Services() {
                 </h1>
             </div>
 
-            <section className="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            <section className="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-7 md:px-6 grid-1 w-full max-w-7xl">
                 {services.map(({ id, title, Icon, description }) => (
                     <article
                         key={id}

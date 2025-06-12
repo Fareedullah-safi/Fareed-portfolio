@@ -1,7 +1,15 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import { FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 const Home = () => {
+    const [downloadCV, setDownloadCV] = useState(false);
+
+    const handleDownload = () => {
+        setDownloadCV(true);
+        setTimeout(() => setDownloadCV(false), 2000); // Reset after 2s
+    };
+
     return (
         <section id='Home' className="bg-[#0a1c28] min-h-screen w-full grid grid-cols-1 md:grid-cols-2 h-screen">
             {/* Left Side Content */}
@@ -49,9 +57,15 @@ const Home = () => {
                     </li>
                 </ul>
 
-                <button className="mt-5 bg-cyan-500 text-white px-6 py-2 rounded-2xl text-sm md:text-base font-semibold transition hover:bg-cyan-600">
-                    More About Me
-                </button>
+                {/* Download Button */}
+                <a
+                    href="images/Fareed.png"
+                    download
+                    onClick={handleDownload}
+                    className="mt-5 bg-cyan-500 text-white px-6 py-2 rounded-2xl text-sm md:text-base font-semibold transition hover:bg-cyan-600 active:bg-cyan-400"
+                >
+                    {downloadCV ? "Downloading CV..." : "Download CV"}
+                </a>
             </div>
 
             {/* Right Side Image */}
@@ -60,23 +74,13 @@ const Home = () => {
                     src="images/Fareed.png"
                     alt="Fareed Safi"
                     className="
-      w-64 h-64        /* base size */
-      sm:w-72 sm:h-72  /* small screens up */
-      md:w-80 md:h-80  /* medium screens up */
-      lg:w-96 lg:h-96  /* large screens up */
-      object-cover
-      rounded-full
-      ring-2 ring-cyan-300/50      /* subtle outer ring */
-      shadow-lg shadow-cyan-500/30 /* gentle colored shadow */
-      transition-transform transition-shadow transition-ring
-      duration-300 ease-in-out
-      md:hover:scale-105            /* slight pop on hover */
-      md:hover:shadow-2xl           /* deeper shadow on hover */
-      md:hover:ring-4              /* accentuate ring on hover */
-    "
+            w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96
+            object-cover rounded-full ring-2 ring-cyan-300/50
+            shadow-lg shadow-cyan-500/30 transition-transform duration-300 ease-in-out
+            md:hover:scale-105 md:hover:shadow-2xl md:hover:ring-4
+          "
                 />
             </div>
-
         </section>
     );
 };

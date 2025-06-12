@@ -16,7 +16,7 @@ const About = () => {
                     <p className='text-cyan-500'>Me</p></h1>
                 <h2 className="text-3xl mb-2 font-semibold justify-center flex lg:text-4xl">Full Stack Developer</h2>
                 <p className="leading-relaxed text-justify">
-                    I am a skilled web developer with over 1 year of experience in the industry.
+                    I am a skilled web developer with over 1 year of experience.
                     My passion lies in creating captivating website designs and implementing them
                     through frontend development. I take pride in staying up-to-date with current
                     design trends and leveraging my creativity to produce visually appealing and
