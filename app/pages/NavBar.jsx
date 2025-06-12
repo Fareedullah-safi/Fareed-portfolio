@@ -21,7 +21,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`${poppins.className} bg-[#080e28] w-full sticky top-0 z-50`}
+      className={`${poppins.className} bg-transparent w-full sticky top-0 z-50`}
       role="navigation"
       aria-label="Main navigation"
     >
@@ -57,14 +57,14 @@ const NavBar = () => {
       {isOpen && (
         <ul
           id="mobile-menu"
-          className="flex items-center justify-center gap-7 px-6 text-base font-medium text-gray-200 bg-white/0 backdrop-blur-md backdrop-saturate-150 border border-white/10 rounded-xl shadow-lg sm:gap-13 md:hidden "
+          className="flex flex-col gap-2 px-6 bg-transparent text-base font-medium text-gray-200 bg-white/0 backdrop-blur-md backdrop-saturate-150 border border-white/10 rounded-xl shadow-lg md:hidden "
         >
           {navLinks.map((link) => (
             <li key={link.name} className="relative group cursor-pointer text-1xl">
               <span className="relative z-10">
                 <a href={link.href}>{link.name}</a>
               </span>
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-0"></span>
             </li>
           ))}
         </ul>
