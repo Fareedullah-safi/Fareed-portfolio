@@ -3,14 +3,6 @@ import React from 'react';
 const About = () => {
     return (
         <section id='About' className="bg-[#0a1c28] w-full flex flex-col lg:flex-row min-h-screen py-16 justify-center items-center p-6 gap-6 text-white">
-            <div>
-                <img
-                    src="/images/fareed.png"
-                    alt="Fareed"
-                    className="w-60 h-60 object-cover mt-4 rounded-full md:hidden"
-                />
-            </div>
-
             <div className="w-full md:-mt-12">
                 <h1 className="text-5xl font-bold mb-1 flex gap-1 justify-center lg:text-6xl">About
                     <p className='text-cyan-500'>Me</p></h1>
