@@ -57,10 +57,10 @@ const NavBar = () => {
       {isOpen && (
         <ul
           id="mobile-menu"
-          className="md:hidden flex items-center gap-4 px-6 text-base font-medium text-gray-200 bg-white/0 backdrop-blur-md backdrop-saturate-150 border border-white/10 rounded-xl shadow-lg"
+          className="flex items-center justify-center gap-7 px-6 text-base font-medium text-gray-200 bg-white/0 backdrop-blur-md backdrop-saturate-150 border border-white/10 rounded-xl shadow-lg sm:gap-13 md:hidden "
         >
           {navLinks.map((link) => (
-            <li key={link.name} className="relative group cursor-pointer text-xl">
+            <li key={link.name} className="relative group cursor-pointer text-1xl">
               <span className="relative z-10">
                 <a href={link.href}>{link.name}</a>
               </span>
