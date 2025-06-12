@@ -21,7 +21,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`${poppins.className} bg-transparent w-full sticky top-0 z-50`}
+      className={`${poppins.className} bg-[#0a1c28] w-full sticky top-0 z-50`}
       role="navigation"
       aria-label="Main navigation"
     >
@@ -34,8 +34,11 @@ const NavBar = () => {
         <ul className="hidden md:flex gap-4 md:gap-6 text-base md:text-1xl font-semibold text-gray-200">
           {navLinks.map((link) => (
             <li key={link.name} className="relative group cursor-pointer">
-              <span className="relative z-10">
-                <a href={link.href}>{link.name}</a>
+              <span className="relative z-10"
+                onClick={() => setIsOpen(true)}
+              >
+                <a href={link.href}
+                >{link.name}</a>
               </span>
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#008B8B] transition-all duration-500 group-hover:w-full"></span>
             </li>
@@ -62,7 +65,7 @@ const NavBar = () => {
           {navLinks.map((link) => (
             <li key={link.name} className="relative group cursor-pointer text-1xl">
               <span className="relative z-10">
-                <a href={link.href}>{link.name}</a>
+                <a href={link.href} onClick={() => setIsOpen(false)}>{link.name}</a>
               </span>
               <span className="absolute left-0 bottom-0"></span>
             </li>

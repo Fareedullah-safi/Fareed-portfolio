@@ -15,11 +15,11 @@ const Home = () => {
             {/* Left Side Content */}
             <div className="flex flex-col items-center justify-center text-center px-6 md:px-0">
                 {/* Mobile Avatar */}
-                <div className="md:hidden mb-4">
+                <div className="sm:mt-0 md:hidden mb-4">
                     <img
                         src="images/Fareed.png"
                         alt="Fareed Safi"
-                        className="w-60 h-60 object-cover mt-3 rounded-full"
+                        className="w-60 h-60 object-cover pt-2 rounded-full"
                     />
                 </div>
 
