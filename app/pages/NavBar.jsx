@@ -21,7 +21,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`${poppins.className} bg-[#0a1c28] w-full sticky top-0 z-50`}
+      className={`${poppins.className} bg-transparent w-full sticky top-0 z-50`}
       role="navigation"
       aria-label="Main navigation"
     >

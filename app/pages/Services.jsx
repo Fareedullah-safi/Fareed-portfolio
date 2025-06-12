@@ -27,7 +27,7 @@ const services = [
 
 export default function Services() {
     return (
-        <main id='Services' className="bg-[#0a1c28] w-full min-h-screen py-0 md:py-16">
+        <main id='Services' className="bg-[#0a1c28] w-full min-h-screen pt-10 py-0 md:py-10">
             <div className="text-center mb-12">
                 <h1 className="text-gray-300 text-5xl font-bold md:text-5xl lg:text-6xl">
                     My <span className="text-cyan-500">Services</span>
