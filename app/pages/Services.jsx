@@ -27,14 +27,14 @@ const services = [
 
 export default function Services() {
     return (
-        <main id='Services' className="bg-[#0a1c28] w-full min-h-screen pt-10 py-0 md:py-10">
-            <div className="text-center mb-12">
+        <main id='Services' className="bg-[#0a1c28] w-full pt-10 py-0 md:py-10">
+            <div className="text-center mb-10">
                 <h1 className="text-gray-300 text-5xl font-bold md:text-5xl lg:text-6xl">
                     My <span className="text-cyan-500">Services</span>
                 </h1>
             </div>
 
-            <section className="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-7 md:px-6 grid-1 w-full max-w-7xl">
+            <section className="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 px-7 md:px-6 grid-1 w-full">
                 {services.map(({ id, title, Icon, description }) => (
                     <article
                         key={id}
