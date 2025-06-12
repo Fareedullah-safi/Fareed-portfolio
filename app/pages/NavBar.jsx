@@ -27,12 +27,12 @@ const NavBar = () => {
       aria-label="Main navigation"
     >
       <div className="flex items-center justify-between md:backdrop-blur-sm">
-        <h1 className="text-gray-200 text-2xl font-bold tracking-wide cursor-pointer">
+        <h1 className="text-gray-200 px-8 py-3 text-2xl font-bold tracking-wide cursor-pointer">
           Portfolio
         </h1>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-6 text-lg font-medium text-gray-200">
+        <ul className="hidden md:flex px-8 gap-6 text-1xl font-semibold text-gray-200">
           {navLinks.map((link) => (
             <li key={link.name} className="relative group cursor-pointer">
               <a href={link.href} className="relative z-10">
