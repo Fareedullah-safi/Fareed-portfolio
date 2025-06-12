@@ -11,11 +11,11 @@ const Home = () => {
     };
 
     return (
-        <section id='Home' className="bg-[#0a1c28] pb-5 w-full pt-0 grid grid-cols-1 md:grid-cols-2 h-screen">
+        <section id='Home' className="bg-[#0a1c28] min-h-screen w-full grid grid-cols-1 md:grid-cols-2 h-screen">
             {/* Left Side Content */}
             <div className="flex flex-col items-center justify-center text-center px-6 md:px-0">
                 {/* Mobile Avatar */}
-                <div className="sm:mt-0 md:hidden mb-4">
+                <div className="md:hidden mb-4">
                     <img
                         src="images/Fareed.png"
                         alt="Fareed Safi"
