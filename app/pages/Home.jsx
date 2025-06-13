@@ -19,7 +19,7 @@ const Home = () => {
                     <img
                         src="images/Fareed.png"
                         alt="Fareed Safi"
-                        className="w-60 h-60 object-cover pt-2 rounded-full"
+                        className="w-60 h-60 object-cover rounded-full"
                     />
                 </div>
 
