@@ -30,7 +30,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <section id='Project' className="min-h-screen bg-[#0a192f] text-white pt-10 px-4 md:px-8 md:py-12">
+    <section id='Project' className="bg-[#0a192f] text-white pt-12 px-4 md:px-8 md:py-12">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl mb-8 md:text-5xl font-bold md:pb-6">
           Latest <span className="text-cyan-400">Project</span>
