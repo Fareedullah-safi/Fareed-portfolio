@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <section
             id="Home"
-            className="bg-[#0a1c28] text-white w-full pt-20 md:pt-32 md:pb-28"
+            className="bg-[#0a1c28] text-white w-full pt-24 md:pt-32 md:pb-28"
         >
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 {/* Left Side */}
