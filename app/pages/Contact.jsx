@@ -3,8 +3,8 @@ import { FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <section id='Contact' className="min-h-screen pt-15 p-8 bg-[#0a192f] text-white">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+    <section id='Contact' className="min-h-screen pt-15 bg-[#0a192f] text-white">
+      <div className="w-full grid -ml-1 grid-cols-1 md:grid-cols-2 px-8 gap-8 lg:px-10.5 w-full">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold">Let's Work Together</h2>
           <p className="text-gray-400">

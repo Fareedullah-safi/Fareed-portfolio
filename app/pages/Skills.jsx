@@ -20,8 +20,8 @@ const professionalSkills = [
 
 const Skills = () => {
   return (
-    <section id='Skills' className="min-h-screen w-full bg-[#0a192f] text-white pt-18 py-16 px-6">
-      <div className="max-w-6xl  mx-auto grid md:grid-cols-2 gap-15">
+    <section id='Skills' className="min-h-screen w-full bg-[#0a192f] text-white pt-18 py-16">
+      <div className="max-w-6xl px-1 mx-auto grid md:grid-cols-2 px-7 gap-15 lg:px-10.5">
         {/* Technical Skills */}
         <div>
           <h2 className="text-2xl font-bold mb-8 border-b-2 border-cyan-400 pb-2 inline-block">

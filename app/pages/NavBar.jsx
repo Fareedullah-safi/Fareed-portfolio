@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-6 md:px-7.5 py-4 flex justify-between items-center lg:px-10">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-gray-2ss00">
           Port<span className="text-cyan-500">folio</span>

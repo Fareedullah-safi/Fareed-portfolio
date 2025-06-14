@@ -46,17 +46,17 @@ const Home = () => {
                             </a>
                         </li>
                         <li className="hover:border-2 hover:border-green-500 rounded-full p-2 transition">
-                            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/+923429698772" target="_blank" rel="noopener noreferrer">
                                 <FaWhatsapp />
                             </a>
                         </li>
                         <li className="hover:border-2 hover:border-blue-500 rounded-full p-2 transition">
-                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/fareed-safi-b1094a351/" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedinIn />
                             </a>
                         </li>
                         <li className="hover:border-2 hover:border-white rounded-full p-2 transition">
-                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/Fareedullah-safi" target="_blank" rel="noopener noreferrer">
                                 <FaGithub />
                             </a>
                         </li>
@@ -78,7 +78,7 @@ const Home = () => {
                     <img
                         src="images/Fareed.png"
                         alt="Fareed Safi"
-                        className="w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-full ring-2 ring-cyan-300/50 shadow-xl transition-transform hover:scale-105"
+                        className="w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-full ring-2 ring-cyan-300/50 shadow-xl transition-transform hover:scale-105 shadow-lg shadow-cyan-600"
                     />
                 </div>
             </div>

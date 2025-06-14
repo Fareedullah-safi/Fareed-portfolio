@@ -4,9 +4,9 @@ const About = () => {
     return (
         <section
             id="About"
-            className="bg-[#0a1c28] min-h-screen justify-center flex items-center px-6 md:px-10 lg:px-20 py-10"
+            className="bg-[#0a1c28] min-h-screen justify-center flex items-center px-6 md:px-10 lg:px-16 py-10"
         >
-            <div className="max-w-8xl">
+            <div className="max-w-8xl px-0 md:-ml-2 lg:-ml-6">
                 {/* Heading */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold flex gap-2 justify-center text-center">
                     About <span className="text-cyan-500">Me</span>
