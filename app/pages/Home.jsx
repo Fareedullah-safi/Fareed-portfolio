@@ -35,7 +35,7 @@ const Home = () => {
 
                     <p className="text-gray-400 text-center mt-4 max-w-lg leading-relaxed text-sm md:text-base">
                         I'm a web developer with 1+ year of experience in building responsive interfaces,
-                        integrating backends, and crafting full-stack web solutions with modern technologies.
+                        integrating backends, and crafting full-stack web solutions with modern technologies like Next Js.
                     </p>
 
                     {/* Social Links */}
