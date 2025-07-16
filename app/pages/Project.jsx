@@ -12,10 +12,10 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Website Development',
-    image: '',
-    description: 'Full-stack web development with latest technologies',
-    link: '#',
+    title: 'Quick-cart ecommerce web',
+    image: '/images/quick-cart.png',
+    description: 'Quick Cart - Your ultimate destination for seamless online shopping. Explore top-quality products, unbeatable prices, and fast delivery, all in one place.',
+    link: 'https://quick-cart-e-commerce-amber.vercel.app/',
     alert: 'coming soon',
   },
   {
