@@ -37,6 +37,7 @@ const Home = () => {
                         I'm a web developer with 1+ year of experience in building responsive interfaces,
                         integrating backends, and crafting full-stack web solutions with modern technologies like Next Js.
                     </p>
+                    {/* Contact section */}
 
                     {/* Social Links */}
                     <ul className="flex gap-4 mt-6 text-xl text-gray-300">
