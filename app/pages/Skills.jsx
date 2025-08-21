@@ -56,7 +56,7 @@ const Skills = () => {
               Professional Skills
             </h2>
           </div>
-          <div className="grid grid-cols-2 gap-8 place-items-center sm:grid-cols-4 place-items-start md:grid-cols-2">
+          <div className="grid grid-cols-2 gap-12 text-center place-items-center sm:grid-cols-4 place-items-start md:grid-cols-2">
             {professionalSkills.map(({ name, percent }) => (
               <div key={name} className="flex flex-col">
                 <div className="relative w-28 h-28">
