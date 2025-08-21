@@ -65,8 +65,7 @@ const Home = () => {
 
                     {/* Download Button */}
                     <a
-                        href="images/Fareed.png"
-                        download
+                        href="images/Fareed CV.pdf"
                         onClick={handleDownload}
                         className="mt-6 bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-400 transition px-6 py-2 rounded-xl font-medium text-sm md:text-base"
                     >

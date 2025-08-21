@@ -21,12 +21,14 @@ const professionalSkills = [
 const Skills = () => {
   return (
     <section id='Skills' className="min-h-screen w-full bg-[#0a192f] text-white pt-18 py-16">
-      <div className="max-w-6xl px-1 mx-auto grid md:grid-cols-2 px-7 gap-15 lg:px-10.5">
+      <div className="max-w-9xl px-1 mx-auto grid gap-30 md:grid-cols-2 px-7 gap-15 lg:px-10.5">
         {/* Technical Skills */}
         <div>
-          <h2 className="text-2xl font-bold mb-8 border-b-2 border-cyan-400 pb-2 inline-block">
-            Technical Skills
-          </h2>
+          <div className='flex justify-center md:justify-start'>
+            <h2 className="text-2xl font-bold mb-8 border-b-2 border-cyan-400 pb-2 inline-block">
+              Technical Skills
+            </h2>
+          </div>
           <div className="space-y-6">
             {technicalSkills.map(({ name, percent, icon }) => (
               <div key={name}>
@@ -49,18 +51,20 @@ const Skills = () => {
 
         {/* Professional Skills */}
         <div>
-          <h2 className="text-2xl font-bold mb-8 border-b-2 border-cyan-400 pb-2 inline-block">
-            Professional Skills
-          </h2>
-          <div className="grid grid-cols-2 gap-8">
+          <div className='flex justify-center md:justify-start'>
+            <h2 className="text-2xl ml-0 font-bold mb-8 border-b-2 border-cyan-400 pb-2 inline-block">
+              Professional Skills
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-8 place-items-center sm:grid-cols-4 place-items-start md:grid-cols-2">
             {professionalSkills.map(({ name, percent }) => (
-              <div key={name} className="flex flex-col items-center">
+              <div key={name} className="flex flex-col">
                 <div className="relative w-28 h-28">
                   <svg className="w-full h-full" viewBox="0 0 36 36">
                     <path
                       d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
                       fill="none"
                       stroke="#1e293b"
                       strokeWidth="3"
@@ -68,8 +72,8 @@ const Skills = () => {
                     />
                     <path
                       d="M18 2.0845
-                        a 15.9155 15.9155 0 0 1 0 31.831
-                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"
                       fill="none"
                       stroke="#22d3ee"
                       strokeWidth="3"
