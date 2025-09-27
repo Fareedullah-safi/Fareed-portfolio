@@ -76,7 +76,7 @@ const Home = () => {
                 {/* Right Side Avatar */}
                 <div className="hidden md:flex justify-center items-center">
                     <img
-                        src="images/Fareed.png"
+                        src="https://res.cloudinary.com/dbz6ftcwo/image/upload/v1758961809/Fareed_jbxv4r.png"
                         alt="Fareed Safi"
                         className="w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-full ring-2 ring-cyan-300/50 shadow-xl transition-transform hover:scale-105 shadow-lg shadow-cyan-600"
                     />
