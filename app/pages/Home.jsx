@@ -21,7 +21,7 @@ const Home = () => {
                     {/* Mobile Avatar */}
                     <div className="md:hidden mb-6">
                         <img
-                            src="images/Fareed.jpg"
+                            src="https://res.cloudinary.com/dbz6ftcwo/image/upload/v1758961809/Fareed_jbxv4r.png"
                             alt="Fareed Safi"
                             className="w-48 h-48 object-cover rounded-full ring-2 ring-cyan-400/60 shadow-lg"
                         />
