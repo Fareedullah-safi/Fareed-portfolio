@@ -19,9 +19,9 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Mobile App Development',
+    title: 'Foody Zone',
     image: 'https://res.cloudinary.com/dbz6ftcwo/image/upload/v1760438372/Zw_lbw2wi.jpg',
-    description: 'Cross-platform mobile applications with responsive design',
+    description: 'FoodyZone is a modern full-stack food ordering web app built with Next.js 15, TypeScript, Tailwind CSS, and MongoDB — delivering a fast, stylish, and seamless experience for customers and admins alike.',
     link: 'https://foody-zone-delta.vercel.app/',
   },
 ];
