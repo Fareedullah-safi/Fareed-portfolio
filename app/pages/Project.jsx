@@ -16,15 +16,13 @@ const projects = [
     image: '/images/quick-cart.png',
     description: 'Quick Cart - Your ultimate destination for seamless online shopping. Explore top-quality products, unbeatable prices, and fast delivery, all in one place.',
     link: 'https://quick-cart-e-commerce-amber.vercel.app/',
-    alert: 'coming soon',
   },
   {
     id: 3,
     title: 'Mobile App Development',
-    image: '',
+    image: 'https://res.cloudinary.com/dbz6ftcwo/image/upload/v1760438372/Zw_lbw2wi.jpg',
     description: 'Cross-platform mobile applications with responsive design',
-    link: '#',
-    alert: 'coming soon',
+    link: 'https://foody-zone-delta.vercel.app/',
   },
 ];
 
